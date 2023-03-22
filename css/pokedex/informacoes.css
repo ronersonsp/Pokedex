@@ -1,0 +1,40 @@
+.informacoes {
+  align-self: end;
+  border: 4px solid black;
+  border-left: 0px;
+  display: none;
+  grid-template-rows: 1fr 1fr;
+  width: 350px;
+  height: 530px;
+  background-color: red;
+  z-index: -1;
+}
+
+.informacoes-container {
+  margin: 40px auto;
+}
+
+.informacoes-texto {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.2rem;
+  display: block;
+  background-color: aqua;
+  width: 300px;
+  height: 400px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.ativo{
+  display: grid;
+  animation: aparecerPokedex .5s forwards;
+}
+
+@keyframes aparecerPokedex {
+  from {
+    transform: translate3d(-300px, 0, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}

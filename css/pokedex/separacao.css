@@ -1,0 +1,30 @@
+.separacao{
+  position: relative;
+  display: block;
+  width: 40px;
+  background-color: rgb(212, 0, 0);
+  border: 4px solid black;
+  border-left: 0px;
+}
+
+.separacao::before{
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 4px;
+  box-shadow: 0px 8px black;
+  top: 40px;
+  color: black;
+  background-color: black;
+}
+
+.separacao::after{
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 4px;
+  box-shadow: 0px -8px black;
+  bottom: 40px;
+  color: black;
+  background-color: black;
+}
